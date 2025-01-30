@@ -39,6 +39,30 @@
       "type": "outcome",
       "createdAt": "2024-11-01T16:10:35.927Z",
       "id": 5
+    },
+    {
+      "description": "teste ",
+      "price": 33,
+      "category": "teste",
+      "type": "outcome",
+      "createdAt": "2025-01-30T15:28:07.902Z",
+      "id": 6
+    },
+    {
+      "description": "aaaaaaaaaaa",
+      "price": 222,
+      "category": "adsadas",
+      "type": "outcome",
+      "createdAt": "2025-01-30T15:28:34.819Z",
+      "id": 7
+    },
+    {
+      "description": "aluguel",
+      "price": 1100,
+      "category": "moradia",
+      "type": "outcome",
+      "createdAt": "2025-01-30T15:40:08.620Z",
+      "id": 8
     }
   ]
 }
