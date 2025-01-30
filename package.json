@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "lint:fix": "eslint ./src --fix .",
     "server:json": "json-server --watch ./server.json --port 3333",
     "preview": "vite preview"
   },
@@ -25,11 +26,14 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
+    "@rocketseat/eslint-config": "^2.2.2",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@types/styled-components": "^5.1.34",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
     "@vitejs/plugin-react": "^4.3.2",
-    "eslint": "^9.11.1",
+    "eslint": "^9.19.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.12",
     "globals": "^15.9.0",

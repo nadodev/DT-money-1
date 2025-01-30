@@ -1,0 +1,16 @@
+{
+    "extends": [ "@rocketseat/eslint-config/react", "plugin:@typescript-eslint/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "rules": {
+      "@typescript-eslint/no-unused-expressions": [
+        "error",
+        {
+          "allowShortCircuit": true,
+          "allowTernary": true,
+          "allowTaggedTemplates": true,
+          "no-empty-object-type": true
+        }
+      ]
+    }
+}
