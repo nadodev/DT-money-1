@@ -1,3 +1,4 @@
+/* eslint-disable no-unexpected-multiline */
 import styled, { css } from "styled-components";
 
 interface SummaryCardProps {
