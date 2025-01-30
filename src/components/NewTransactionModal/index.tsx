@@ -15,8 +15,6 @@ const newTransactionSchema = z.object({
 
 type NewTransactionType = z.infer<typeof newTransactionSchema>;
 
-
-
 export default function NewTransactionModal() {
 
     const {
@@ -26,7 +24,7 @@ export default function NewTransactionModal() {
         formState: { isSubmitting },
     } = useForm<NewTransactionType>({
         resolver: zodResolver(newTransactionSchema),
-        defaultValues : {
+        defaultValues: {
             type: 'income'
         }
     })
@@ -47,8 +45,6 @@ export default function NewTransactionModal() {
             type,
             createdAt: new Date().toISOString()
         });
-        
-        //close modal and reload transactions
 
         window.location.reload();
 
@@ -78,7 +74,7 @@ export default function NewTransactionModal() {
                         <Controller
                             control={control}
                             name="type"
-                            render={({field}) => {
+                            render={({ field }) => {
                                 return (
                                     <TransactionType
                                         onValueChange={field.onChange}
@@ -89,7 +85,7 @@ export default function NewTransactionModal() {
                                             variant='income'
                                             type="button"
                                             className="income"
-                                            
+
                                         >
                                             <ArrowCircleUp size={24} /> Entrada
                                         </TransactionTypeButton>
